@@ -25,6 +25,7 @@ import sova from '../assets/sova.png';
 import viper from '../assets/viper.png';
 import valorantlogo from '../assets/valorantlogo.png';
 
+import DisplayPieChart from '../components/pieChart';
 import WriteValorantData from '../components/writeData';
 
 import { Link } from 'react-router-dom';
@@ -251,6 +252,7 @@ function Valorant() {
 
   return (
     <div>
+      <DisplayPieChart type='character' />
       <List>
         <ListItem button onClick={(event) => chosenCharacter(null)}>
           Reset Choice
